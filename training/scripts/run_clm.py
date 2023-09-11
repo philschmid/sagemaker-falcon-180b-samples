@@ -252,6 +252,7 @@ def training_function(args):
         else True,  # this is needed for gradient checkpointing
         device_map="auto",
         quantization_config=bnb_config,
+        use_auth_token=True
     )
 
     # create peft config
@@ -315,7 +316,7 @@ def training_function(args):
         )
 
     # save tokenizer for easy inference
-    tokenizer = AutoTokenizer.from_pretrained(args.model_id)
+    tokenizer = AutoTokenizer.from_pretrained(args.model_id,use_auth_token=True)
     tokenizer.save_pretrained(sagemaker_save_dir)
 
 
