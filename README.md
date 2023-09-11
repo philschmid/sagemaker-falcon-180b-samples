@@ -5,7 +5,7 @@ This repository contains instructions/examples/tutorials for getting started wit
 ### Examples
 
 * [Deploy Falcon 180B on Amazon SageMaker](./infernece/sagemaker-notebook.ipynb) 
-* [Fine-tune Falcon 180B on Amazon SageMaker](./training/sagemaker-notebook.ipynb) _coming soon_
+* [Fine-tune Falcon 180B on Amazon SageMaker](./training/sagemaker-notebook.ipynb)
 
 ## Requirements
 
